@@ -49,7 +49,7 @@ A contact management app that allows users to create, edit, delete, and import c
 
 ---
 
-##  Assignment 2 – Image Search & Upload App
+##  Assignment 3 – Image Search & Upload App
 
 ### Overview
 An image search and upload app demonstrating Android threading, networking, and remote file uploads. Users can search and view images from online APIs and upload selected ones to cloud storage.
@@ -72,7 +72,7 @@ An image search and upload app demonstrating Android threading, networking, and 
 
 ```plaintext
 /
-├── Assignment - Tic-Tac-Toe/
-├── Assignment - Contact App/
-├── Assignment - Image Search Upload/
+├── Tic-Tac-Toe/
+├── Contact App/
+├── Image Search Upload/
 └── README.md
