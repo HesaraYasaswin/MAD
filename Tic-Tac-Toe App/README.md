@@ -105,10 +105,4 @@ The application adheres to standard Android development practices with a focus o
 - **UI Components:** ConstraintLayout, FragmentManager, RecyclerView, DialogFragment, AlertDialog
 - **Others:** CountDownTimer, GridLayoutManager, Drawable Resources
 
----
 
-## Installation Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/tic-tac-toe-android.git
