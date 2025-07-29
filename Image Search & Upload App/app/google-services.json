@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1096361993589",
+    "project_id": "image-app-7003d",
+    "storage_bucket": "image-app-7003d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096361993589:android:25b6116b666afd38155f3c",
+        "android_client_info": {
+          "package_name": "com.example.basicremotecall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp1ZsgRutZsCSa908ELY8s8YHOKvo33Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
