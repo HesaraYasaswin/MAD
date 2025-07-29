@@ -1,116 +1,78 @@
-# MAD
-Mobile Application Development (Curtin University)
-# Tic-Tac-Toe Android Application
+# Android Application Projects – Curtin University
 
-## Project Overview
-
-This project is developed as part of **COMP2008 – Mobile Application Development** at Curtin University. The goal of this assignment is to build a feature-rich **Tic-Tac-Toe** game application for Android, which demonstrates proficiency in Android UI design, user interaction, customisation features, game logic, and proper software architecture using modern development practices.
-
-This application is designed for casual gameplay and educational use, with an emphasis on flexibility, usability, and responsiveness across various Android devices and screen orientations.
+This repository contains three Android applications developed for the Mobile Application Development unit. Each project showcases key Android development concepts such as custom UI design, local and remote data handling, multithreading, and third-party integrations.
 
 ---
 
-## Assignment Objective
+##  Assignment 1 – Tic-Tac-Toe Game
 
-The purpose of this project is to build a fully functional Android Tic-Tac-Toe application that includes:
+### Overview
+A fully-featured Tic-Tac-Toe game app supporting both multiplayer and AI gameplay with custom board settings and user profiles.
 
-- Game modes supporting both two-player and human-vs-AI interaction.
-- Personalised gameplay experiences through customizable board sizes, win conditions, and player markers.
-- Support for user profiles with editable avatars.
-- In-game tracking of statistics such as win rates and total games.
-- A modular and responsive interface implemented using fragments.
-- Reliable performance in both portrait and landscape orientations without loss of state.
-
-The assignment requires following standard Android development guidelines, ensuring a polished user experience with reusable components, proper activity and fragment lifecycle handling, and modern UI design.
-
----
-
-## Features
-
-### 1. Game Modes
-
-- **Two-player mode:** Two users take turns on the same device, placing markers (X or O) on the grid.
-- **AI mode:** A single player plays against a non-strategic AI that places its marker randomly on available cells.
-
-### 2. Game Personalisation
-
-The application allows users to configure various aspects of the gameplay:
-
-- **Board Size Selection:** Users can choose from 3x3, 4x4, or 5x5 board sizes.
-- **Win Conditions:** Users can define how many markers in a row are required to win (between 3 to 5).
-- **Player Marker Selection:** Users may choose between standard markers (X and O) or custom icons available in the app.
-
-### 3. User Profiles and Avatar Selection
-
-- Users can create a profile consisting of their username and avatar.
-- Profiles can be edited during gameplay through a settings screen.
-- A collection of avatar images is presented in a scrollable list using a `RecyclerView`.
-- Note: Profile data is **volatile** — all data is lost once the application is closed.
-
-### 4. Gameplay Statistics
-
-- The app tracks gameplay statistics for each user session:
-  - Total games played
-  - Number of wins
-  - Number of losses
-  - Number of draws
-  - Win percentage
-- All statistical data is stored in memory for the session only (no persistent storage is implemented in this version).
-
-### 5. In-Game Interface Features
-
-During gameplay, the app provides a comprehensive UI with the following elements:
-
-- **Game Board:** Visually displays the current state of the game using a grid layout.
-- **Player Turn Indicators:** Shows which player's turn it is, along with their name and avatar.
-- **Move Count and Progress Tracker:** Displays number of moves taken and remaining slots.
-- **Countdown Timer:** Limits the time a player has to make their move.
-- **Game Status Messages:** Alerts for win, draw, and invalid moves.
-- **Undo and Reset Options:** Allows players to undo the last move or restart the match.
-- **Settings Access:** Users can pause the game and access the main menu or settings from within the game.
-- **Player Information Display:** Displays user profile info including avatar and username throughout gameplay.
+### Features
+- Supports 2-player and vs AI (random logic) modes
+- Selectable board sizes: 3x3, 4x4, 5x5
+- Customizable win condition (3–5 in a row)
+- Player profiles with editable name and avatar
+- Game stats: Wins, losses, draws
+- In-game features: 
+  - Turn display
+  - Move counter
+  - Timer
+  - Result popup
+  - Undo and restart
+- Fragment-based UI for modular navigation
+- Supports portrait and landscape orientations
+- Avatar selection via scrollable RecyclerView
 
 ---
 
-## Technical and Architectural Requirements
+##  Assignment 2 – Contact Manager App
 
-The application adheres to standard Android development practices with a focus on modularity and maintainability.
+### Overview
+A contact management app that allows users to create, edit, delete, and import contacts. Contacts can have profile photos captured using the device camera and are stored in a local SQLite database.
 
-### Device Orientation and Layout Handling
-
-- All UI components are designed to **adapt to both landscape and portrait orientations**.
-- The layout is responsive and compatible with **phones and tablets** of various screen sizes.
-- The application ensures that **no data is lost** when orientation changes (state restoration is handled appropriately).
-
-### Fragment-Based Architecture
-
-- The app uses **fragment-based navigation** to manage UI screens and lifecycles efficiently.
-- Separate fragments are created for:
-  - Main Menu
-  - Settings Screen
-  - User Profile
-  - Game Board
-
-### Avatar Selection with RecyclerView
-
-- A scrollable `RecyclerView` is used to display a list/grid of avatar options.
-- Users can select an avatar from this list when creating or editing their profile.
+### Features
+- Contact list using RecyclerView
+- Add, edit, and delete contact records
+- Contact details include:
+  - Name
+  - Phone number
+  - Email
+  - Profile image
+- Capture profile photos via camera
+- Store images locally or via URI
+- Import contacts from the device’s address book
+- Duplicate contact detection
+- Persistent storage using SQLite
+- Fragment-based navigation
 
 ---
 
-## Technologies Used
+##  Assignment 2 – Image Search & Upload App
 
-- **Programming Language:** Kotlin
-- **Platform:** Android SDK
-- **IDE:** Android Studio (Giraffe or later recommended)
-- **Architecture:** MVVM pattern with fragment-based navigation
-- **UI Components:** ConstraintLayout, FragmentManager, RecyclerView, DialogFragment, AlertDialog
-- **Others:** CountDownTimer, GridLayoutManager, Drawable Resources
+### Overview
+An image search and upload app demonstrating Android threading, networking, and remote file uploads. Users can search and view images from online APIs and upload selected ones to cloud storage.
+
+### Features
+- Search images using a web API (e.g., Pixabay or Pexels)
+- Progress bar shown during API calls
+- Display up to 15 search results
+- Toggle views:
+  - Single-column (1 image per row)
+  - Double-column (2 images per row)
+- Scrollable image list with thumbnails
+- Upload selected images to cloud storage
+- Cloud options: Firebase (preferred), Google Drive, or Dropbox
+- Background upload using asynchronous threading
 
 ---
 
-## Installation Instructions
+## Project Structure
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/tic-tac-toe-android.git
+```plaintext
+/
+├── Assignment - Tic-Tac-Toe/
+├── Assignment - Contact App/
+├── Assignment - Image Search Upload/
+└── README.md
